@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(to right, rgba(255,0,0,0), rgb(137, 117, 117)),  url(https://img.freepik.com/free-vector/blue-diagonal-square-grid-background_1409-1251.jpg?t=st=1651562827~exp=1651563427~hmac=1f2c7abdf0d528d9fde1c9eb0719e57ad8abb4e49dfba77e03a08a985fb0ba4b&w=1800);
+    position: relative;
+    background-size: 100%;
+    z-index: -1;
+    height: 2000px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+// input{
+//     outline: none;
+//     border: none;
+// }
+
