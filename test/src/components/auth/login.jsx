@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [showpass, setShowPass] = useState(false);
@@ -10,6 +11,12 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("refresh prevented");
+  };
+
+  const login = (data) => {
+    axios.post("http://localhost:7070/login", data).then(() => {
+      console.log(data);
+    });
   };
 
   return (
@@ -44,7 +51,7 @@ const Login = () => {
           </div>
         </div>
         <div className="login-submit">
-          <button type="submit" id="login-submits">
+          <button onSubmit={login} type="submit" id="login-submits">
             Sign In
           </button>
         </div>

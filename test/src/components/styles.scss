@@ -493,56 +493,56 @@ $fourth-color: rgb(25, 162, 43);
 }
 /* -----------Login---------*/
 
-/* -----------Register---------*/
-.regis-contain{
-    background-image: linear-gradient(to right, rgba(255,0,0,0.1), rgba(255,0,0,0.5));
-    // background-color: $primary--color;
-    margin: 160px 100px 0 100px;
-    height: 70vh;
-    align-items: center;
-    // text-align: center;
-    display: flex;
-    justify-content: space-around;
-    color: $primary--color;
+// /* -----------Register---------*/
+// .regis-contain{
+//     background-image: linear-gradient(to right, rgba(255,0,0,0.1), rgba(255,0,0,0.5));
+//     // background-color: $primary--color;
+//     margin: 160px 100px 0 100px;
+//     height: 70vh;
+//     align-items: center;
+//     // text-align: center;
+//     display: flex;
+//     justify-content: space-around;
+//     color: $primary--color;
 
-    h1{
-        text-align: center;
-        margin-bottom: 20px;
-    }
+//     h1{
+//         text-align: center;
+//         margin-bottom: 20px;
+//     }
 
-    .regis-input{
-        font-size: 1.2rem;
-        display: flex;
-        flex-direction: column;
-
-
-        input{
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding: 5px;
-        }
-    }
-
-    .regis-btn{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1rem;
-
-        .regis-btns{
-            background-color: rgb(0, 0, 0);
-            color: $primary--color;
-            cursor: pointer;
-            padding: 8px 15px;
-            border-radius: 15px;
-        }
-
-        .regis-btns:hover{
-            background-color: $fourth-color;
-            color: $primary--color;
-        }
-    }
+//     .regis-input{
+//         font-size: 1.2rem;
+//         display: flex;
+//         flex-direction: column;
 
 
-}
-/* -----------Register---------*/
+//         input{
+//             margin-top: 5px;
+//             margin-bottom: 5px;
+//             padding: 5px;
+//         }
+//     }
+
+//     .regis-btn{
+//         margin-top: 10px;
+//         text-align: center;
+//         font-size: 1rem;
+
+//         .regis-btns{
+//             background-color: rgb(0, 0, 0);
+//             color: $primary--color;
+//             cursor: pointer;
+//             padding: 8px 15px;
+//             border-radius: 15px;
+//         }
+
+//         .regis-btns:hover{
+//             background-color: $fourth-color;
+//             color: $primary--color;
+//         }
+//     }
+
+
+// }
+// /* -----------Register---------*/
 

@@ -1,0 +1,65 @@
+// // -----------header-----------
+// .regis-contain{
+//     margin-top: 200px;
+//     background-image: linear-gradient(to right, rgba(255,0,0,0.1), rgba(255,0,0,0.5));
+//     margin: 160px 100px 0 100px;
+//     height: 70vh;
+//     align-items: center;
+//     text-align: center;
+//     // display: flex;
+//     // justify-content: center;
+//     display: grid;
+//     grid-template-columns: 10px 10px 10px auto;
+//     font-size: 1.5rem;
+
+//     Form{
+//         margin-left: 25vw;
+//     }
+
+//     button{
+//         padding: 5px;
+//         margin-left: 10vw;
+//     }
+// }
+
+// // -----------header-----------
+
+.login-main{
+    margin: 200px;
+    background-color: white;
+    height: 70vh;
+    text-align: center;
+}
+
+.regis-main{
+    margin: 200px;
+    background-color: white;
+    height: 70vh;
+    text-align: center;
+}
+
+
+.all-user{
+    margin: 200px 10px;
+    color: white;
+    max-width: 100%;
+    overflow-y: scroll;
+    
+    .all-user-container{
+        
+
+        table, th, td {
+            border: 1px solid;
+            padding: 5px;
+
+            th{
+                background-color: blue;
+            }
+          }
+    }
+
+    
+  
+}
+
+

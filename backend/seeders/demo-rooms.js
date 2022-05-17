@@ -11,12 +11,13 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
      */
-    return queryInterface.bulkInsert("Users", [
+    return queryInterface.bulkInsert("Rooms", [
       {
+        title: "Room cheap",
+        address: "District 9",
+        price: 1.5,
+        member: 4,
         username: "hoanghac",
-        password: "123456789",
-        email: "example@example.com",
-        phonenumber: "036285494",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -30,6 +31,5 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    return queryInterface.bulkDelete("Users", null, {});
   },
 };
