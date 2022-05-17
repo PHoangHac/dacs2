@@ -152,6 +152,45 @@ const postRoom = async (req, res) => {
   }
 };
 
+const getByRoomId = async (req, res) => {
+  try {
+    const rooms = await db.Rooms.findAll({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json(rooms[0]);
+  } catch (err) {
+    res.json({ msg: err.msg });
+  }
+};
+
+const updateRoom = async (req, res) => {
+  try {
+    await db.Rooms.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json({ msg: "Update successful !" });
+  } catch (err) {
+    res.json({ msg: err.msg });
+  }
+};
+
+const deleteRoom = async (req, res) => {
+  try {
+    await db.Rooms.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json({ msg: "Delete successful !" });
+  } catch (err) {
+    res.json({ msg: err.msg });
+  }
+};
+
 //Xuat module de su dungs
 module.exports = {
   getUser: getUser,
@@ -159,4 +198,7 @@ module.exports = {
   Login: Login,
   getRoom: getRoom,
   postRoom: postRoom,
+  getByRoomId: getByRoomId,
+  updateRoom: updateRoom,
+  deleteRoom: deleteRoom,
 };

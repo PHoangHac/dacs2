@@ -5,6 +5,9 @@ const {
   Login,
   getRoom,
   postRoom,
+  getByRoomId,
+  updateRoom,
+  deleteRoom,
 } = require("../controllers/UsersController");
 // const { Register } = require("../controllers/UsersController");
 //import
@@ -21,5 +24,11 @@ router.post("/login", Login);
 router.get("/Rooms", getRoom);
 
 router.post("/Rooms/create", postRoom);
+
+router.get("/Rooms/:id", getByRoomId);
+
+router.patch("/Rooms/:id", updateRoom);
+
+router.delete("/Rooms/:id", deleteRoom);
 
 module.exports = router;

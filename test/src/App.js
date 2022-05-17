@@ -9,6 +9,7 @@ import Register2 from "./components/auth/register2";
 import Alluser from "./components/auth/Alluser";
 import DisplayRooms from "./components/product/DisplayRooms";
 import CreateRooms from "./components/product/CreateRoom";
+import DetailsRoom from "./components/product/DetailRoom";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Alluser" element={<Alluser />} />
         <Route path="/DisplayRooms" element={<DisplayRooms />} />
         <Route path="/CreateRooms" element={<CreateRooms />} />
+        <Route path="/DetailRooms/:id" element={<DetailsRoom />} />
       </Routes>
 
       {/* <Footer /> */}
